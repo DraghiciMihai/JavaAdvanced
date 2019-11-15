@@ -21,8 +21,7 @@ public class Insumare {
 
     static void suma(LinkedList x) {
         if (x.peek() != null) {
-            sum += lista.peek();
-            lista.remove();
+            sum += lista.remove();
             suma(lista);
         } else
             System.out.println("Suma listei este " + sum);
